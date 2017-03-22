@@ -106,6 +106,7 @@ function readOne(){
     $this->price = $row['price'];
     $this->description = $row['description'];
     $this->category_id = $row['category_id'];
+	$this->image = $row['image'];
 }
 
 function update(){

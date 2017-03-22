@@ -14,7 +14,7 @@ $db = $database->getConnection();
 $product = new Product($db);
 $category = new Category($db);
  
-$page_title = "Read Products";
+$page_title = "Lista de Produtos";
 include_once "header.php";
  
 // query products
