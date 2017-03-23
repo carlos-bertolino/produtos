@@ -2,7 +2,7 @@
     <!-- /container -->
  
 <!-- jQuery library -->
-<script src="libs/js/jquery.js"></script>
+<script src="libs/js/jquery-3.2.0.js"></script>
  
 <!-- bootstrap JavaScript -->
 <script src="libs/css/bootstrap/dist/js/bootstrap.min.js"></script>

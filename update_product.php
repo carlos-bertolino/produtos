@@ -22,12 +22,12 @@ $product->id = $id;
 $product->readOne();
 
 // set page header
-$page_title = "Update Product";
+$page_title = "Atualizar Produtos";
 include_once "header.php";
  
 // contents will be here
 echo "<div class='right-button-margin'>";
-    echo "<a href='index.php' class='btn btn-default pull-right'>Read Products</a>";
+    echo "<a href='index.php' class='btn btn-default pull-right'>Listar Produtos</a>";
 echo "</div>";
 
 // if the form was submitted
@@ -42,14 +42,14 @@ if($_POST){
     // update the product
     if($product->update()){
         echo "<div class='alert alert-success alert-dismissable'>";
-            echo "Product was updated.";
+            echo "Produto atualizado.";
         echo "</div>";
     }
  
     // if unable to update the product, tell the user
     else{
         echo "<div class='alert alert-danger alert-dismissable'>";
-            echo "Unable to update product.";
+            echo "Falha ao atualizar produto.";
         echo "</div>";
     }
 }
@@ -63,22 +63,22 @@ include_once "footer.php";
     <table class='table table-hover table-responsive table-bordered'>
  
         <tr>
-            <td>Name</td>
+            <td>Nome</td>
             <td><input type='text' name='name' value='<?php echo $product->name; ?>' class='form-control' /></td>
         </tr>
  
         <tr>
-            <td>Price</td>
+            <td>Preço</td>
             <td><input type='text' name='price' value='<?php echo $product->price; ?>' class='form-control' /></td>
         </tr>
  
         <tr>
-            <td>Description</td>
+            <td>Descrição</td>
             <td><textarea name='description' class='form-control'><?php echo $product->description; ?></textarea></td>
         </tr>
  
         <tr>
-            <td>Category</td>
+            <td>Categoria</td>
             <td>
                 <!-- categories select drop-down will be here -->
 				<?php
@@ -108,7 +108,7 @@ echo "</select>";
         <tr>
             <td></td>
             <td>
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </td>
         </tr>
  
