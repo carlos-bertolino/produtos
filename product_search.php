@@ -17,7 +17,7 @@ $category = new Category($db);
 // get search term
 $search_term=isset($_GET['s']) ? $_GET['s'] : '';
  
-$page_title = "You searched for \"{$search_term}\"";
+$page_title = "Palavra pesquisada \"{$search_term}\"";
 include_once "header.php";
  
 // query products
@@ -30,7 +30,7 @@ $page_url="search.php?s={$search_term}&";
 $total_rows=$product->countAll_BySearch($search_term);
  
 // read_template.php controls how the product list will be rendered
-include_once "read_template.php";
+include_once "template.php";
  
 // footer.php holds our javascript and closing html tags
 include_once "footer.php";

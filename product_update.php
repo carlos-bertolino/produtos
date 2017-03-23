@@ -42,12 +42,9 @@ if($_POST){
     // update the product
     if($product->update()){
         echo "<div class='alert alert-success alert-dismissable'>";
-            echo "Produto atualizado.";
+        echo "Produto atualizado.";
         echo "</div>";
-    }
- 
-    // if unable to update the product, tell the user
-    else{
+    }else{
         echo "<div class='alert alert-danger alert-dismissable'>";
             echo "Falha ao atualizar produto.";
         echo "</div>";

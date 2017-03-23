@@ -18,12 +18,9 @@ if($_POST){
      
     // delete the product
     if($product->delete()){
-        echo "Object was deleted.";
-    }
-     
-    // if unable to delete the product
-    else{
-        echo "Unable to delete object.";
+        echo "O objeto foi excluído.";
+    }else{ // if unable to delete the product
+        echo "Não é possível excluir o objeto.";
     }
 }
 ?>

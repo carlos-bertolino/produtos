@@ -27,7 +27,7 @@ $page_url = "index.php?";
 $total_rows=$product->countAll();
  
 // read_template.php controls how the product list will be rendered
-include_once "read_template.php";
+include_once "template.php";
  
 // footer.php holds our javascript and closing html tags
 include_once "footer.php";
