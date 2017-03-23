@@ -75,5 +75,10 @@ if($total_rows>0){
 // tell the user there are no products
 else{
     echo "<div class='alert alert-danger'>Nenhum produto encontrado.</div>";
+	echo "<div class='right-button-margin'>";
+    echo "<a href='index.php' class='btn btn-primary pull-right'>";
+    echo "<span class='glyphicon glyphicon-plus'></span>Listar Produtos";
+    echo "</a>";
+    echo "</div>";
 }
 ?>
