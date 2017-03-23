@@ -4,7 +4,7 @@ echo "<ul class=\"pagination\">";
 // button for first page
 if($page>1){
     echo "<li><a href='{$page_url}' title='Go to the first page.'>";
-        echo "First Page";
+        echo "Primeira";
     echo "</a></li>";
 }
  
@@ -38,7 +38,7 @@ for ($x=$initial_num; $x<$condition_limit_num; $x++) {
 // button for last page
 if($page<$total_pages){
     echo "<li><a href='" .$page_url . "page={$total_pages}' title='Last page is {$total_pages}.'>";
-        echo "Last Page";
+        echo "Última";
     echo "</a></li>";
 }
  
